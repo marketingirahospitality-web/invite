@@ -122,7 +122,7 @@
       position: relative;
       width: 100%;
       max-width: 350px; 
-      padding: 16px 18px;
+      padding: 18px 18px;
       border-radius: var(--radius-card);
       background: linear-gradient(180deg, rgba(8, 15, 30, 0.9) 0%, rgba(0, 0, 0, 0.98) 100%);
       border: 1px solid var(--glass-edge);
@@ -146,28 +146,6 @@
       pointer-events: none;
       opacity: 0.7;
     }
-
-    .card__label {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      font-family: var(--sans);
-      font-weight: 400;
-      font-size: 8px;
-      letter-spacing: 0.32em;
-      text-transform: uppercase;
-      color: var(--white);
-      opacity: 0.85;
-      padding-bottom: 12px;
-    }
-    .card__label-dot {
-      width: 4px; height: 4px;
-      border-radius: 50%;
-      background: var(--white);
-      box-shadow: 0 0 6px rgba(255,255,255,0.9);
-    }
-    .card__label-sep { opacity: 0.3; color: var(--jewel); }
 
     .hero {
       margin: 0;
@@ -238,18 +216,7 @@
 
     .arrival {
       text-align: center;
-      padding: 10px 0 2px;
-    }
-
-    .arrival__kicker {
-      font-family: var(--sans);
-      font-weight: 300;
-      font-size: 8px;
-      letter-spacing: 0.35em;
-      text-transform: uppercase;
-      color: var(--white);
-      opacity: 0.75;
-      margin: 0 0 6px;
+      padding: 12px 0 2px;
     }
 
     .arrival__headline {
@@ -561,14 +528,7 @@
     <article class="card" aria-label="Adaab arrival experience">
       <span class="card__edge-light" aria-hidden="true"></span>
 
-      <div class="card__label reveal" data-reveal-delay="0">
-        <span class="card__label-dot" aria-hidden="true"></span>
-        <span>Adaab</span>
-        <span class="card__label-sep" aria-hidden="true">|</span>
-        <span>The Art of Tehzeeb</span>
-      </div>
-
-      <figure class="hero reveal" data-reveal-delay="100">
+      <figure class="hero reveal" data-reveal-delay="0">
         <div class="hero__frame">
           <svg class="hero__placeholder-svg" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <defs>
@@ -584,7 +544,7 @@
             <circle cx="200" cy="40" r="2.5" fill="#ffffff" opacity="0.6"/>
           </svg>
 
-          <!-- Upgraded thumbnail pointing to cover.jpg hosted on raw.githubusercontent.com -->
+          <!-- Cover thumbnail pointing to cover.jpg -->
           <img
             class="hero__image"
             id="heroImage"
@@ -602,22 +562,21 @@
       </figure>
 
       <header class="arrival">
-        <p class="arrival__kicker reveal" data-reveal-delay="180">An arrival, hosted</p>
-        <h1 class="arrival__headline reveal" data-reveal-delay="240">
+        <h1 class="arrival__headline reveal" data-reveal-delay="100">
           Your arrival
           <span class="arrival__headline-em">begins here</span>
         </h1>
-        <p class="arrival__sub reveal" data-reveal-delay="300">
+        <p class="arrival__sub reveal" data-reveal-delay="200">
           Press play to enter the experience
         </p>
       </header>
 
-      <div class="waveform reveal" data-reveal-delay="360" aria-hidden="true">
+      <div class="waveform reveal" data-reveal-delay="300" aria-hidden="true">
         <div class="waveform__inner" id="waveform"></div>
         <div class="waveform__baseline" aria-hidden="true"></div>
       </div>
 
-      <div class="player reveal" data-reveal-delay="420">
+      <div class="player reveal" data-reveal-delay="400">
         <div class="player__progress" id="progress" role="slider"
              aria-label="Seek through the experience"
              aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
