@@ -1,8 +1,0 @@
-```json
-   {
-     "name": "website-hilton",
-     "version": "1.0.0",
-     "scripts": {
-       "start": "npx static-server -p $PORT"
-     }
-   }
